@@ -1,0 +1,11 @@
+{
+    "MedicalTranscriptionJobName": "aws-cookbook-806",
+    "LanguageCode": "en-US",
+    "Specialty": "PRIMARYCARE",
+    "Type": "DICTATION",
+    "OutputBucketName":"awscookbook806-RANDOM_STRING",
+    "Media": {
+        "MediaFileUri": "s3://awscookbook806-RANDOM_STRING/dictation.mp3"
+    }
+}
+
