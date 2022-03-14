@@ -176,7 +176,9 @@ aws iam detach-role-policy --role-name AWSCookbook804Comprehend \
 
 ### Delete the IAM Role:
 
-`aws iam delete-role --role-name AWSCookbook804Comprehend`
+```
+aws iam delete-role --role-name AWSCookbook804Comprehend
+```
 
 ### Delete the objects in your S3 bucket:
 ```
@@ -189,7 +191,9 @@ aws s3 rm s3://awscookbook804-$RANDOM_STRING/redacted_output/
 
 ### Delete the S3 bucket:
 
-`aws s3api delete-bucket --bucket awscookbook804-$RANDOM_STRING`
+```
+aws s3api delete-bucket --bucket awscookbook804-$RANDOM_STRING
+```
 
 ### Unset the environment variable that you created manually:
 ```
