@@ -101,8 +101,7 @@ JOB_ID=$(aws comprehend start-pii-entities-detection-job \
     --output-data-config S3Uri="s3://awscookbook804-$RANDOM_STRING/redacted_output/" \
     --mode "ONLY_REDACTION" \
     --redaction-config \
-PiiEntityTypes=["BANK_ACCOUNT_NUMBER","BANK_ROUTING","CREDIT_DEBIT_NUMBER", "CREDIT_DEBIT_CVV",
-"CREDIT_DEBIT_EXPIRY","PIN","EMAIL","ADDRESS","NAME","PHONE","SSN",MaskMode="REPLACE_WITH_PII_ENTITY_TYPE"] \
+PiiEntityTypes=["BANK_ACCOUNT_NUMBER","BANK_ROUTING","CREDIT_DEBIT_NUMBER", "CREDIT_DEBIT_CVV", "CREDIT_DEBIT_EXPIRY","PIN","EMAIL","ADDRESS","NAME","PHONE","SSN",MaskMode="REPLACE_WITH_PII_ENTITY_TYPE"] \
     --data-access-role-arn "arn:aws:iam::${AWS_ACCOUNT_ID}:role/AWSCookbook804Comprehend" \
     --job-name "aws cookbook 804" \
     --language-code "en" \
